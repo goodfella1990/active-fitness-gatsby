@@ -1,0 +1,16 @@
+.btn-white {
+  background-color: #fff;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 19px;
+  align-self: center;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+  }
+}
