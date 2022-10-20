@@ -1,0 +1,45 @@
+.hero {
+  width: 100vw;
+  max-height: fit-content;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .bg {
+    @media only screen and (max-width: 600px) {
+      width: 100vw;
+    }
+    width: 37rem;
+    z-index: 2000;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .content {
+    height: 0;
+    color: #fff;
+    position: relative;
+    bottom: 25rem;
+    z-index: 3000;
+
+    h1 {
+      font-size: 8rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 1150px) {
+      h1 {
+        font-size: 10vw;
+      }
+      h4 {
+        font-size: 3vw;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      bottom: 30vh;
+    }
+  }
+}

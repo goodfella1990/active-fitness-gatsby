@@ -1,0 +1,48 @@
+.header {
+  height: 5rem;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: black;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.header .logo {
+  width: 10rem;
+}
+.header .logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media only screen and (max-width: 1000px) {
+  .header .nav-list {
+    display: none;
+  }
+}
+.header ul {
+  display: flex;
+  gap: 1rem;
+}
+.header ul li {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header ul li .dot {
+  content: "";
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+}
+.header .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}/*# sourceMappingURL=header.css.map */

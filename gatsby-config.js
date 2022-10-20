@@ -10,7 +10,7 @@ module.exports = {
       options: {
         fonts: [
           `heebo`,
-          `source sans-serif/100`, // you can also specify font weights and styles
+          `sans-serif\:200`, // you can also specify font weights and styles
         ],
         display: "swap",
       },

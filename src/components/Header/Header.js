@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
+import React, { useState } from "react";
 import HeaderData from "./HeaderData";
 import logo from "../../images/Logo.png";
-import { IoIosMenu } from "react-icons/io";
 import MenuBar from "../../UI/Icons/MenuBar";
 
 const Header = () => {
+  const [menuBarState, setMenuBarState] = useState(false);
+
   return (
     <header className="header">
       <div className="logo">
@@ -14,15 +14,32 @@ const Header = () => {
       <div className="nav-list">
         <ul>
           {HeaderData.map((item) => (
-            <li key={item.id}>{item.title}</li>
+            <li key={item.id} className="li">
+              <div>{item.title}</div>
+              <div className="dot"></div>
+            </li>
           ))}
         </ul>
       </div>
+      {menuBarState && (
+        <div className="menubar-list">
+          <ul>
+            {HeaderData.map((item) => (
+              <li key={item.id} className="li">
+                <div>{item.title}</div>
+                <div className="dot"></div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="right">
         <button className="btn-white">Join Now</button>
-        <div className="menu-bar">
+        <div
+          className="menu-bar"
+          onClick={() => setMenuBarState((prev) => !prev)}
+        >
           <MenuBar />
-          {/* <IoIosMenu /> */}
         </div>
       </div>
     </header>

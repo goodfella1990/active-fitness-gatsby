@@ -1,19 +1,37 @@
 * {
   margin: 0;
   font-family: "heebo", sans-serif;
+  color: #fff;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Barlow:wght@200;400&family=Dosis&family=Heebo:wght@200&family=M+PLUS+Rounded+1c&family=Montserrat:wght@300&family=PT+Serif&family=Roboto&family=Roboto+Condensed&display=swap");
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-weight: 100;
+}
+
+.layout {
+  background-color: #131619;
 }
 
 // <<=====components=====>>
 @import "../styles/components/header/header.scss";
+@import "../styles/components/footer/footer.scss";
 @import "../styles/components/UI/Button/Button.scss";
 
+@import "../styles/UI/MainComponents/Hero/Hero.scss";
+@import "../styles/UI/MainComponents/MainContent/MainContent.scss";
+@import "../styles/UI/MainComponents/RowSlider/RowSlider.scss";
+@import "../styles/UI/MainComponents/Map/Map.scss";
 // <<=====Icons=====>>
 @import "../styles/UI/Icons/MenuBar.scss";
+@import "../styles/UI/components/input/input.scss";
+@import "../styles/global.scss";

@@ -1,0 +1,21 @@
+.menubar-icon {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+}
+.menubar-icon .bar {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.25;
+}/*# sourceMappingURL=MenuBar.css.map */
